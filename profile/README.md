@@ -1,23 +1,38 @@
 # Yodel
 
-**The open voice protocol for AI agents.**
+**The open protocol for connecting humans to AI agents.**
 
-Yodel connects humans to AI agents — by voice, on any device, with any backend. No vendor lock-in.
+Talk or type to any AI agent, from any device, through any backend. No vendor lock-in.
 
-Think of it as a walkie-talkie for your AI agents: you speak, your agent responds. Whether you're running Ollama locally, hitting the Claude API, or hosting your own vLLM server — Yodel doesn't care. It's the last mile between your device and your AI.
+Think of it as a walkie-talkie for your AI agents: you speak, your agent responds. Whether you're running Ollama locally, hitting the Claude API, or hosting your own vLLM server — Yodel doesn't care. It's the last mile between you and your AI.
 
 ## How it works
 
-Yodel builds on the OpenAI-compatible `/v1/chat/completions` format and extends it with optional voice-specific features: TTS control, device metadata, session management. A backend that doesn't know Yodel still works — the extensions are fully optional.
+Yodel builds on the OpenAI-compatible `/v1/chat/completions` format and extends it with optional features: TTS control, device metadata, session management. A backend that doesn't know Yodel still works — the extensions are fully optional.
 
 ```
-You (Voice) ──[ Yodel ]──> Any AI Backend
-                              ├── Ollama
-                              ├── LiteLLM / vLLM
-                              ├── Claude API
-                              ├── OpenAI API
-                              └── Your own server
+You (Voice/Text) ──[ Yodel ]──> Any AI Backend
+                                  ├── Ollama
+                                  ├── LiteLLM / vLLM
+                                  ├── Claude API
+                                  ├── OpenAI API
+                                  └── Your own server
 ```
+
+## Vision
+
+Yodel v1 is the foundation — a clean, open protocol that works today with any OpenAI-compatible backend.
+
+But we're building towards something bigger:
+
+- **Device Mesh** — your phone, your car, your smart speaker, your laptop — all connected. Start a conversation in the car, finish it at home. Ask a question on your phone, hear the answer from the speaker in the room.
+- **Cross-Device Routing** — audio goes where it makes sense. You whisper into your watch, the response plays on the nearest speaker.
+- **Bidirectional Streaming** — agents don't just respond, they reach out. Proactive updates, real-time status, push notifications — over WebSocket.
+- **IoT & Home Automation** — Yodel as a native integration for Home Assistant, Node-RED, MQTT. Voice-control your entire smart home through your own AI agent, not Alexa or Google.
+- **Automotive** — talk to your own agent in the car via CarPlay and Android Auto, with your prompts, your backend, your data.
+- **Dedicated Hardware** — a physical device. Microphone, speaker, WiFi, one button. The open-source walkie-talkie for AI agents.
+
+MCP connects agents to tools. A2A connects agents to each other. **Yodel connects humans to agents.**
 
 ## Repos
 
