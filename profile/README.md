@@ -4,7 +4,7 @@
 
 Talk or type to any AI agent, from any device, through any backend. No vendor lock-in.
 
-Think of it as a walkie-talkie for your AI agents: you speak, your agent responds. Whether you're running Ollama locally, hitting the Claude API, or hosting your own vLLM server — Yodel doesn't care. It's the last mile between you and your AI.
+Think of it as a walkie-talkie for your AI agents: you speak, your agent responds. Whether you're running Ollama locally, calling the Claude API, orchestrating agents through n8n or OpenClaw, or hosting your own server — Yodel doesn't care. It's the last mile between you and your AI.
 
 ## How it works
 
