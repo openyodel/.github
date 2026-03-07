@@ -52,6 +52,12 @@ MCP connects agents to tools. A2A connects agents to each other. **Yodel connect
 | [**swift**](https://github.com/openyodel/swift) | iOS SDK (SwiftUI, Apple SpeechAnalyzer) | In progress |
 | [**js**](https://github.com/openyodel/js) | Web/PWA SDK (Web Speech API) | In progress |
 
+## Gateway
+
+To use Yodel, you need a **Gateway** — a service that manages your devices, agents, and backend connections. Think of it as the control plane: which device talks to which agent, with which API key, through which backend.
+
+**WIRE** is the first gateway built on Yodel — a hosted platform with device pairing, agent management, and a web dashboard. But the protocol is open: anyone can build their own gateway, run it self-hosted, or integrate Yodel into an existing platform.
+
 ## Design principles
 
 - **OpenAI-compatible as baseline** — any `/v1/chat/completions` endpoint works out of the box
