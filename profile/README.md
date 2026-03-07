@@ -11,12 +11,22 @@ Think of it as a walkie-talkie for your AI agents: you speak, your agent respond
 Yodel builds on the OpenAI-compatible `/v1/chat/completions` format and extends it with optional features: TTS control, device metadata, session management. A backend that doesn't know Yodel still works — the extensions are fully optional.
 
 ```
-You (Voice/Text) ──[ Yodel ]──> Any AI Backend
-                                  ├── Ollama
-                                  ├── LiteLLM / vLLM
-                                  ├── Claude API
-                                  ├── OpenAI API
-                                  └── Your own server
+  Devices                                          Agents & Backends
+
+  iPhone              ┌─────────────┐              Local Models
+  Android             │             │              ├── Ollama
+  Browser / PWA       │             │              ├── LiteLLM / vLLM
+  CarPlay        ────>│    Yodel    │────>         ├── llama.cpp
+  Android Auto        │  Protocol   │
+  Smart Speaker       │             │              AI APIs
+  Smart Watch         │             │              ├── Claude API
+  Custom Hardware     └─────────────┘              ├── OpenAI API
+                                                   ├── Google Gemini
+                       Voice | Text
+                                                   Agent Platforms
+                                                   ├── n8n
+                                                   ├── OpenClaw
+                                                   └── Any OpenAI-compatible endpoint
 ```
 
 ## Vision
