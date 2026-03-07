@@ -33,7 +33,7 @@ Yodel builds on the OpenAI-compatible `/v1/chat/completions` format and extends 
 
 Yodel v1 is the foundation — a clean, open protocol that works today with any OpenAI-compatible backend.
 
-But we're building towards something bigger:
+We're building this in phases — v1 ships with iOS + PWA first. But the roadmap goes further:
 
 - **Device Mesh** — your phone, your car, your smart speaker, your laptop — all connected. Start a conversation in the car, finish it at home. Ask a question on your phone, hear the answer from the speaker in the room.
 - **Cross-Device Routing** — audio goes where it makes sense. You whisper into your watch, the response plays on the nearest speaker.
@@ -54,7 +54,7 @@ MCP connects agents to tools. A2A connects agents to each other. **Yodel connect
 
 ## Gateway
 
-To use Yodel, you need a **Gateway** — a service that manages your devices, agents, and backend connections. Think of it as the control plane: which device talks to which agent, with which API key, through which backend.
+Yodel works directly with any OpenAI-compatible endpoint. A **Gateway** adds device management, agent configuration, and audio pairing on top — the control plane for which device talks to which agent, with which API key, through which backend.
 
 **WIRE** is the first gateway built on Yodel — a hosted platform with device pairing, agent management, and a web dashboard. But the protocol is open: anyone can build their own gateway, run it self-hosted, or integrate Yodel into an existing platform.
 
@@ -69,6 +69,7 @@ To use Yodel, you need a **Gateway** — a service that manages your devices, ag
 ## What Yodel is NOT
 
 - Not a replacement for MCP (tool integration) or A2A (agent-to-agent) — Yodel is transport-layer only
+- Not a competitor to Pipecat or LiveKit — those are server-side frameworks, Yodel is a client-to-backend protocol
 - Not tied to any specific AI provider
 - Not a framework — it's a protocol and a set of SDKs
 
