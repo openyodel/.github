@@ -48,9 +48,22 @@ MCP connects agents to tools. A2A connects agents to each other. **Open Yodel co
 
 | Repo | What | Status |
 |---|---|---|
-| [**spec**](https://github.com/openyodel/spec) | Protocol specification | In progress |
+| [**spec**](https://github.com/openyodel/spec) | Protocol specification | ✓ [v1.0-draft.1](https://github.com/openyodel/spec/releases/tag/v1.0-draft.1) |
 | [**swift**](https://github.com/openyodel/swift) | iOS SDK (SwiftUI, Apple SpeechAnalyzer) | In progress |
 | [**js**](https://github.com/openyodel/js) | Web/PWA SDK (Web Speech API) | In progress |
+
+## Roadmap
+
+| Milestone | What | Status |
+|-----------|------|--------|
+| **v1 Spec** | Protocol specification + OpenAPI 3.1 | ✓ Released ([v1.0-draft.1](https://github.com/openyodel/spec/releases/tag/v1.0-draft.1)) |
+| **iOS SDK** | SwiftUI client with Apple SpeechAnalyzer + WhisperKit | In progress |
+| **PWA SDK** | React/TypeScript client with Web Speech API | In progress |
+| **v1 Demo** | End-to-end: speak into device → streamed response from LLM | Next |
+| **Android SDK** | Kotlin/Compose client with Whisper.cpp | Planned |
+| **CarPlay / Android Auto** | Talk to your agent in the car | Planned |
+| **Home Assistant** | Voice-control your smart home through your own agent | Planned |
+| **v2 Spec** | WebSocket, bidirectional streaming, device mesh | Planned |
 
 ## Gateway
 
