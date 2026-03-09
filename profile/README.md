@@ -44,6 +44,38 @@ We're building this in phases — v1 ships with iOS + PWA first. But the roadmap
 
 MCP connects agents to tools. A2A connects agents to each other. **Open Yodel connects humans to agents.**
 
+## What can you do with it?
+
+Yodel carries your voice or text to an agent. What that agent does with it is entirely up to you.
+
+**Home & automation**
+> *"Mow a heart into the lawn"* → Your family agent triggers the robot mower via MCP. You get a confirmation — or a photo — when it's done.
+
+**Infrastructure**
+> *"Restart the VPS"* → Your agent SSHes in, reboots the server, and streams the confirmation back to you in real time.
+
+**Smart home**
+> *"It's getting cold upstairs"* → Your agent reads the thermostat, adjusts the temperature, dims the lights. One voice command, done.
+
+**Media & surveillance**
+> *"Make a timelapse from today's garden cam"* → Your agent pulls the footage, runs it through ffmpeg, and sends you the video.
+
+**Anything with an API**
+> If your agent can call it, Yodel can trigger it.
+
+None of this lives inside the Yodel protocol itself — and that's intentional. Yodel carries your intent to the agent. The agent decides what to do: using MCP to call tools, A2A to delegate to specialized sub-agents, or any backend logic you write. The protocol stays clean and backend-agnostic. The power is in what you build behind it.
+
+```
+You (voice / text)
+        │
+        │  Yodel Protocol
+        ▼
+  Your Agent
+        ├── MCP  → tools, APIs, smart home, databases
+        ├── A2A  → specialized sub-agents
+        └── any backend logic you write
+```
+
 ## Repos
 
 | Repo | What | Status |
@@ -71,7 +103,7 @@ See [ROADMAP.md](https://github.com/openyodel/.github/blob/main/ROADMAP.md) for 
 
 Open Yodel works directly with any OpenAI-compatible endpoint. A **Gateway** adds device management, agent configuration, and audio pairing on top — the control plane for which device talks to which agent, with which API key, through which backend.
 
-**WIRE** is the first gateway built on the Yodel protocol — a hosted platform with device pairing, agent management, and a web dashboard. But the protocol is open: anyone can build their own gateway, run it self-hosted, or integrate the Yodel protocol into an existing platform.
+**WIRE (Project Title)** will be the first propetary gateway built on the Yodel protocol — a hosted platform with device pairing, agent management, and a web dashboard. But the protocol is open: anyone can build their own gateway, run it self-hosted, or integrate the Yodel protocol into an existing platform.
 
 ## Design principles
 
