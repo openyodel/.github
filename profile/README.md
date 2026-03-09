@@ -83,6 +83,8 @@ You (voice / text)
 | [**spec**](https://github.com/openyodel/spec) | Protocol specification | ✓ [v1.0-draft.1](https://github.com/openyodel/spec/releases/tag/v1.0-draft.1) |
 | [**swift**](https://github.com/openyodel/swift) | iOS SDK (SwiftUI, Apple SpeechAnalyzer) | Planned |
 | [**js**](https://github.com/openyodel/js) | Web/PWA SDK (Web Speech API) | Planned |
+| [**mcp**](https://github.com/openyodel/mcp) | MCP Server for Yodel discovery and connection | Planned |
+| [**skill**](https://github.com/openyodel/skill) | Agent Skill for Yodel ([agentskills.io](https://agentskills.io) standard) | Planned |
 
 ## Roadmap
 
@@ -93,7 +95,10 @@ See [ROADMAP.md](https://github.com/openyodel/.github/blob/main/ROADMAP.md) for 
 | **v1 Spec** | Protocol specification + OpenAPI 3.1 | ✓ Released ([v1.0-draft.1](https://github.com/openyodel/spec/releases/tag/v1.0-draft.1)) |
 | **iOS SDK** | SwiftUI client with Apple SpeechAnalyzer + WhisperKit | Planned |
 | **PWA SDK** | React/TypeScript client with Web Speech API | Planned |
+| **Service Discovery** | Well-known endpoint, mDNS, known hosts | Planned |
 | **v1 Demo** | End-to-end: speak into device → streamed response from LLM | Next |
+| **MCP Server** | Yodel discovery and connection as MCP tools | Planned |
+| **Agent Skill** | Yodel connection as Agent Skill ([agentskills.io](https://agentskills.io)) | Planned |
 | **Android SDK** | Kotlin/Compose client with Whisper.cpp | Planned |
 | **CarPlay / Android Auto** | Talk to your agent in the car | Planned |
 | **Home Assistant** | Voice-control your smart home through your own agent | Planned |
