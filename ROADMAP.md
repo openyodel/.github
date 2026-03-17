@@ -1,7 +1,7 @@
 # Open Yodel — Project Roadmap
 
 **Status:** Active development
-**Last updated:** 2026-03-09
+**Last updated:** 2026-03-14
 
 ---
 
@@ -13,11 +13,12 @@
 - ✅ `yodel.context`-Feld entfernt — §12.3 Forward Compatibility reicht ([#4](https://github.com/openyodel/spec/issues/4))
 - ✅ Service Discovery Spec (Well-Known Endpoint, Discovery-Hierarchie, Known Hosts)
 - ✅ Erster Live-Test: curl → OpenCode → Claude (Yodel-Headers, Session-ID, Proof of Concept)
-- 🔲 Spec: Yodel-Headers sind transport-agnostic, Body ist backend-spezifisch ([#5](https://github.com/openyodel/spec/issues/5))
-- 🔲 Spec: Session-ID-Mapping Backend → X-Yodel-Session ([#6](https://github.com/openyodel/spec/issues/6))
-- 🔲 Spec: Non-streaming Backends — out of scope oder degraded compatibility? ([#7](https://github.com/openyodel/spec/issues/7))
+- ✅ Spec: Yodel-Headers sind transport-agnostic, Body ist backend-spezifisch — §6.1 ([#5](https://github.com/openyodel/spec/issues/5))
+- ✅ Spec: Session-ID-Mapping Backend → X-Yodel-Session — §8 + OpenAPI ([#6](https://github.com/openyodel/spec/issues/6))
+- ✅ TypeScript SDK (openyodel/js) — YodelClient, YodelSession, DiscoveryClient, STT/TTS-Interfaces, Types, Tests
+- ✅ Spec: Non-streaming Backends — bewusst out of scope in §5.2 ([#7](https://github.com/openyodel/spec/issues/7))
+- ✅ NPM: `@openyodel/sdk` v0.1.0 publiziert
 - 🔲 iOS SDK (openyodel/swift) — SwiftUI Client mit Apple SpeechAnalyzer + WhisperKit
-- 🔲 PWA SDK (openyodel/js) — React/TypeScript Client mit Web Speech API
 - 🔲 Erster End-to-End-Demo: Mikrofon → LLM → gestreamte Antwort (30-Sekunden-Video)
 
 ---
