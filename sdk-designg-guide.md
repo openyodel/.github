@@ -160,7 +160,7 @@ Each platform has its own package structure. The logical components are the same
 ```
 
 Package manager: npm (distribution) / pnpm (development)
-Repo: `openyodel/js`
+Repo: `openyodel/yodel-js`
 
 ### 4.2 Swift (iOS, macOS, watchOS, CarPlay)
 
@@ -174,7 +174,7 @@ OpenYodel                  Swift Package with targets:
 ```
 
 Package manager: Swift Package Manager
-Repo: `openyodel/swift`
+Repo: `openyodel/yodel-swift`
 
 ### 4.3 Kotlin (Android, Android Auto)
 
@@ -671,8 +671,8 @@ Each SDK lives in its own repo under `openyodel/`:
 
 | Repo | SDK | Language |
 |------|-----|----------|
-| `openyodel/js` | JS/TypeScript SDK | TypeScript |
-| `openyodel/swift` | iOS/macOS SDK | Swift |
+| `openyodel/yodel-js` | JS/TypeScript SDK | TypeScript |
+| `openyodel/yodel-swift` | iOS/macOS SDK | Swift |
 | `openyodel/kotlin` | Android SDK | Kotlin |
 | `openyodel/embedded` | Hardware/IoT SDK | C (Phase 3) |
 

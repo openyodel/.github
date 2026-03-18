@@ -15,10 +15,10 @@
 - ✅ Erster Live-Test: curl → OpenCode → Claude (Yodel-Headers, Session-ID, Proof of Concept)
 - ✅ Spec: Yodel-Headers sind transport-agnostic, Body ist backend-spezifisch — §6.1 ([#5](https://github.com/openyodel/spec/issues/5))
 - ✅ Spec: Session-ID-Mapping Backend → X-Yodel-Session — §8 + OpenAPI ([#6](https://github.com/openyodel/spec/issues/6))
-- ✅ TypeScript SDK (openyodel/js) — YodelClient, YodelSession, DiscoveryClient, STT/TTS-Interfaces, Types, Tests
+- ✅ TypeScript SDK (openyodel/yodel-js) — YodelClient, YodelSession, DiscoveryClient, STT/TTS-Interfaces, Types, Tests
 - ✅ Spec: Non-streaming Backends — bewusst out of scope in §5.2 ([#7](https://github.com/openyodel/spec/issues/7))
 - ✅ NPM: `@openyodel/sdk` v0.1.0 publiziert
-- 🔲 iOS SDK (openyodel/swift) — SwiftUI Client mit Apple SpeechAnalyzer + WhisperKit
+- 🔲 iOS SDK (openyodel/yodel-swift) — SwiftUI Client mit Apple SpeechAnalyzer + WhisperKit
 - 🔲 Erster End-to-End-Demo: Mikrofon → LLM → gestreamte Antwort (30-Sekunden-Video)
 
 ---

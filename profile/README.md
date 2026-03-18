@@ -81,8 +81,8 @@ You (voice / text)
 | Repo | What | Status |
 |---|---|---|
 | [**spec**](https://github.com/openyodel/spec) | Protocol specification | ✓ [v1.0-draft.1](https://github.com/openyodel/spec/releases/tag/v1.0-draft.1) |
-| [**swift**](https://github.com/openyodel/swift) | iOS SDK (SwiftUI, Apple SpeechAnalyzer) | Planned |
-| [**js**](https://github.com/openyodel/js) | Web/PWA SDK (Web Speech API) | Planned |
+| [**yodel-swift**](https://github.com/openyodel/yodel-swift) | iOS SDK (SwiftUI, Apple SpeechAnalyzer) | Planned |
+| [**yodel-js**](https://github.com/openyodel/yodel-js) | Web/PWA SDK (Web Speech API) | ✓ v0.1.0 |
 | [**mcp**](https://github.com/openyodel/mcp) | MCP Server for Yodel discovery and connection | Planned |
 | [**skill**](https://github.com/openyodel/skill) | Agent Skill for Yodel ([agentskills.io](https://agentskills.io) standard) | Planned |
 
