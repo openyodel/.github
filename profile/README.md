@@ -4,7 +4,9 @@
 
 Talk or type to any AI agent, from any device, through any backend. No vendor lock-in.
 
-Think of it as a walkie-talkie for your AI agents: you speak, your agent responds. Whether you're running Ollama locally, calling the Claude API, orchestrating agents through n8n or OpenClaw, or hosting your own server — Open Yodel doesn't care. It's the last mile between you and your AI.
+Talk or type. Yodel carries your intent to the agent. The agent does the work. Whether you're running Ollama locally, calling the Claude API, orchestrating agents through n8n or OpenClaw, or hosting your own server — Open Yodel doesn't care. It's the last mile between you and your AI.
+
+> **New here?** Start with the [Vision](https://github.com/openyodel/spec/blob/main/VISION.md) to understand where Open Yodel is heading.
 
 ## How it works
 
