@@ -97,6 +97,9 @@ You (voice / text / gesture)
 |---|---|---|
 | [**spec**](https://github.com/openyodel/spec) | Protocol specification + Vision | ✓ [v1.0-draft.1](https://github.com/openyodel/spec/releases/tag/v1.0-draft.1) |
 | [**yodel-js**](https://github.com/openyodel/yodel-js) | TypeScript SDK (`@openyodel/sdk`) | ✓ [v0.1.0](https://www.npmjs.com/package/@openyodel/sdk) |
+| [**yodel-agent-claude**](https://github.com/openyodel/yodel-agent-claude) | Claude agent server with native Yodel + OpenAI-compatible API | 🚧 In Progress |
+| [**plugin-openyodel-hermes**](https://github.com/openyodel/plugin-openyodel-hermes) | AI agent platform adapter — connect any Yodel device to an AI agent | 🚧 In Progress |
+| [**yodel-acoustic-pairing**](https://github.com/openyodel/yodel-acoustic-pairing) | Acoustic device discovery and pairing — research & spec | 🚧 In Progress |
 | [**yodel-swift**](https://github.com/openyodel/yodel-swift) | iOS SDK (SwiftUI, Apple SpeechAnalyzer) | Planned |
 | [**mcp**](https://github.com/openyodel/mcp) | MCP Server for Yodel discovery and connection | Planned |
 | [**skill**](https://github.com/openyodel/skill) | Agent Skill for Yodel ([agentskills.io](https://agentskills.io) standard) | Planned |
